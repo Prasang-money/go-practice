@@ -5,6 +5,7 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/Prasang-money/snippetbox/pkg/forms"
 	"github.com/Prasang-money/snippetbox/pkg/models"
 )
 
@@ -14,6 +15,7 @@ import (
 // to it as the build progresses.
 type templateData struct {
 	CurrentYear int
+	Form        *forms.Form
 	Snippet     *models.Snippet
 	Snippets    []*models.Snippet
 }
